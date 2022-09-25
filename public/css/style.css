@@ -1,79 +1,110 @@
-.container-fluid{
-    background-color: #3C3D49;
-    margin-right: -1px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-/* body div.container-fluid{
-    padding-bottom: -50vh;
-} */
+/* Header */
 .navbar{
-    height: 10%;
-   background-color: #3D3D49
-     ;
+    background-color: #3D3D49
+      ;
 }
-
-.border-light{
-    border-color: #ffffffc4;
+.align-items-center{
+    align-items: center!important;
 }
-aside p{
-    color:#666565ce;
-    font-size: small;
-    margin-left: -10px;
-}
-aside textarea::placeholder{
-    font-size: 22px;    
-}
-aside button.btn-btn{
-    height: 40px;
-    background-color: #96c93e;
-    border-radius: 5px;
-}
-
-.subrayado{
-    border-bottom: 1px dotted black;
-}
-footer{
-    background-color: #1c3643;
-    
-} 
-/* .container-fluid02, .collapse{
-    height: 70px;
-    background-color: #1c3643;
-    padding-top: 30px;
-    
-    
-}  */
 a{
     color: #ffffff;
     text-decoration: none;
 }
-body, html {
-    height: 100%;
-    margin:0;
-    font-family: Arial, Helvetica, sans-serif;
+.navbar-toggler{
+    margin-right: 0px;
 }
 
-/* The hero image */
-.hero-image {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/ba1.jpg");
-  height: 50%;
-  background-position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  padding-bottom: 85vh;
+/* Section "Imagen 1 - Conf. Bs As */
+.bgImage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/ba1.jpg");
+    min-height: 98vh;
+    /* background-position: relative; */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: relative;*/
 }
-
-/* Place text in the middle of the image */
+.d-flex {
+    display: flex!important;
+}
 .hero-text {
-  text-align: end;
-  position: absolute;
-  top: 50%;
-  left: 65%;
-  margin-right: -19%;
-  transform: translate(-50%, -50%);
-  color: white; 
+    text-align: end;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    margin-right: -19%;
+    transform: translate(-50%, -50%);
+    color: #ffffff; 
 }
-section .button1.button.btn-btn{
-background-color: red;
+.bgComprarTicket{
+    color: #ffffff;
+    background-color: #2ba849;
+    border-radius: none;
+}
+  
+/* Section "Playa*/  
+.container-fluid{
+    background-color: #3C3D49;
+    margin-right: -1px;
+}
+.subrayado{
+    border-bottom: 1px dotted black;
+}
+.border-light{
+    border-color: #ffffffc4;
+}
+
+/* Section "Título Form*/  
+aside p{
+    color:#666565ce;
+    font-size: small;
+    margin-left: 5px;
+}
+aside textarea::placeholder{
+    font-size: 22px;    
+}
+.backgroundEnviar{
+    background-color: #96c93e;
+}
+
+/* Footer*/ 
+
+footer{
+    background-color: #1c3643;
+    min-height: 7vh;
+    margin-top: auto;
+}
+
+
+/* Query Section "Imagen 1 - Conf. Bs As */
+
+@media (max-width: 576px){
+    
+    .margenHero {
+        margin: 0 1rem;
+    }
+    .margenHero {
+        margin: 0 6rem;
+    }
+    .flex-row-reverse {
+        flex-direction: row-reverse!important;
+    }
+    .d-flex {
+        display: flex!important;
+    }
+    .row {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: calc(-1 * var(--bs-gutter-y));
+        margin-right: calc(-.5 * var(--bs-gutter-x));
+        margin-left: calc(-.5 * var(--bs-gutter-x));
+    }
+    
 }

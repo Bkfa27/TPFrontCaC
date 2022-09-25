@@ -12,54 +12,94 @@
     <link rel="stylesheet" href="./public/css/style.css">
     <title>TP bootstrap</title>
 </head>
+<header>
+    <nav class="navbar navbar-expand-xl fixed-top navbar-light bg-ligth">
+        <div class="container-fluid m-0">
+            <div class="d-lg-flex justify-content-center align-items-center">
+                <img src="/public/img/codoacodo.png" class="rounded float-start" alt="logo Codo a Codo" width="90px">
+                <a class="navbar-brand" href="#" style="color:#ffffffc4">Conf Bs As</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark"
+                aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-<body>
-    <nav class="navbar navbar-expand-xl navbar-light bg-ligth">
+            <div class="collapse navbar-collapse justify-content-end me-3">
 
-        <div class="d-lg-flex justify-content-center align-items-center">
-            <img src="/public/img/codoacodo.png" class="rounded float-start" alt="logo Codo a Codo" width="90px">
-            <a class="navbar-brand" href="#" style="color:#ffffffc4">Conf Bs As</a>
-        </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark"
-            aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+                <ul class="navbar-nav ms-auto mb-2 mb-xl-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" style="color:#ffffffc4">La
+                            Conferencia</a>
+                    </li>
 
-        <div class="collapse navbar-collapse show ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color:#ffffff62">Los oradores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color:#ffffff62">El lugar y la fecha</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color:#ffffff62">Conviértete en Orador</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color:#1CB224">Comprar Tickets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"></a>
+                    </li>
+                </ul>
 
-            <ul class="navbar-nav ms-auto mb-2 mb-xl-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#" style="color:#ffffffc4">La
-                        Conferencia</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#" style="color:#ffffff62">Los oradores</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" style="color:#ffffff62">El lugar y la fecha</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" style="color:#ffffff62">Conviértete en Orador</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" style="color:#1CB224">Comprar Tickets</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"></a>
-                </li>
-            </ul>
-
-        </div>
+            </div>
         </div>
     </nav>
+</header>
+
+<body>
 
     <section>
 
-        <div class="hero-image">
+        <div class="container-fluid d-flex align-items-center bgImage">
+            <div class="row d-flex flex-row-reverse margenHero">
+                <div class="col-lg-6 d-flex flex-column align-items-center align-items-lg-end">
+                    <h1 class="text-white textoHero">Conf Bs As</h1>
+                    <p class="text-white textoHero">Bs As llega por primera vez a Argentina. Un evento para
+                        compartir con nuestra comunidad el
+                        conocimiento y
+                        experiencia de los expertos que están creando el futuro de Internet. Ven a conocer miembros
+                        del evento,
+                        a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. ¡Te
+                        esperamos!</p>
+
+                    <div class="d-flex gap-3">
+                        <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
+                        <button type="button" class="btn btn-success-light bgComprarTicket">Comprar tickets</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 
+        <div class="col-lg-6 d-flex flex-column align-items-center align-items-lg-end">
+            <h1 class="text-white textoHero">Conf Bs As</h1>
+            <p class="text-white textoHero">Bs As llega por primera vez a Argentina. Un evento para
+                compartir con nuestra comunidad el
+                conocimiento y
+                experiencia de los expertos que están creando el futuro de Internet. Ven a conocer miembros
+                del evento,
+                a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. ¡Te
+                esperamos!</p>
+
+            <div class="d-flex gap-3">
+                <button type="button" class="btn btn-outline-light fw-bold">Quiero ser orador</button>
+                <button type="button" class="btn btn-success fw-bold">Comprar tickets</button>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="hero-image d-flex flex-row align-items-center">
             <div class="hero-text">
                 <h1>Conf Bs As</h1>
                 <p>Bs As llega por primera vez a
@@ -74,13 +114,13 @@
                     <button class="btn btn-success" style="color:#F0F3F4">Comprar tickets</button>
 
                 </div> -->
-            </div>
+        </div>
         </div>
 
     </section>
 
     <section>
-        <div class="container-personajes text-center" style="color:#000000">conoce a los<br>
+        <div class="container-personajes text-center" style="color:#000000">CONOCE A LOS<br>
             <h2><strong>ORADORES</strong></h2>
         </div>
 
@@ -168,7 +208,6 @@
         </div>
     </section>
 
-
     <section>
         <div class="container-orador text-center mt-4" style="color:#000000">CONVIÉRTETE EN UN<br>
             <h2>ORADOR</h2>
@@ -179,75 +218,44 @@
         </p>
     </section>
 
-    <aside>
-        <div class="container w-50">
-            <form action="row g-3 col-3">
-                <div class="container-form row g-3 mt-3 ">
+    <aside class="mx-3">
+        <div class="container-fluid2">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6">
+                    <form class="mb-3">
+                        <div class="d-sm-flex justify-content-between gap-3 mb-2">
+                            <label for="nombre" class="col-12 col-sm-5 flex-grow-1 mb-3 form-label">
 
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Nombre" aria-label="name">
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
-                    </div>
-                    <div class="row mt-3 mx-auto">
-                        <textarea class="form-control" cols="10" rows="4"
-                            placeholder="Sobre qué quieres hablar?"></textarea>
-                        <p>Recuerda incluir un título para tu charla</p>
-                    </div>
-                    <button class="btn-btn border-light mb-3 mb-2" data-bs-toggle="popover" data-bs-placement="left"
-                        style="color:#f8f4f4">Enviar</button>
+                                <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                            </label>
+                            <label for="apellido" class="col-12 col-sm-5 flex-grow-1 form-label">
+
+                                <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+                            </label>
+
+                        </div>
+                        <div class="mb-3">
+
+                            <textarea class="col form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="¿Sobre qué quieres hablar?"></textarea>
+                        </div>
+                        <p class="parrafoFinalS4">Recuerda incluir un título para tu charla</p>
+                        <button type="submit" class="btn w-100 text-light backgroundEnviar">Enviar</button>
+                    </form>
                 </div>
-            </form>
+            </div>
+        </div>
     </aside>
 
-    <footer>
-        <!--  <div class="container-fluid02 mt-4 ">
-        <nav class="navbar navbar-expand-xl navbar-dark text-center">
-            
-             
-              <div class="collapse navbar-collapse show">
-                <ul class="navbar-nav mx-auto mb-2 mb-xl-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Preguntas Frecuentes</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Conáctanos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Prensa</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Conferencia</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Término y condiciones</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Privacidad</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Estudiantes</a>
-                  </li>
-                </ul>
-                
-              </div>
-            </div>
-          </nav> -->
-
-        <br>
-
-
-        <div class="d-flex flex-colum flex-sm-row justify-content-center align-items-center py-4 gap-1 gap-lg-5">
-
-            <a href="#">Preguntas Frecuentes</a>
-            <a href="#">Conáctanos</a>
-            <a href="#">Prensa</a>
-            <a href="#">Conferencia</a>
-            <a href="#">Término y condiciones</a>
-            <a href="#">Privacidad</a>
-            <a href="#">Estudiantes</a>
-        </div>
+    <footer
+        class="d-flex flex-column flex-lg-row justify-content-center align-items-center py-3 gap-1 gap-lg-5 backgroundFooter">
+        <a href="#">Preguntas <span class="salto">frecuentes</span></a>
+        <a href="#">Contáctanos</a>
+        <a href="#">Prensa</a>
+        <a href="#">Conferencias</a>
+        <a href="#">Términos y <span class="salto"> condiciones</span></a>
+        <a href="#">Privacidad</a>
+        <a class="last" href="#">Estudiantes</a>
     </footer>
 
     <!-- JS Boostrap -->
